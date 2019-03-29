@@ -16,7 +16,7 @@ _Track Suggester webpage that asks future students of Epicodus a series of quest
 
 ## Known Bugs
 
-_No bugs were found during testing._
+_If an answer for the quiz question was not selected the quiz continues._
 
 ## Support and contact details
 

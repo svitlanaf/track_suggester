@@ -1,5 +1,7 @@
 $(document).ready(function() {
-
+  // if ( ! $("input").is(':checked') ) {
+  //   alert("Please select one of the following options");
+  // } else {
   $("#quiz_city").hide();
   $("#quiz_company").hide();
   $("#quiz_team").hide();
@@ -25,7 +27,7 @@ $(document).ready(function() {
     $("#quiz_reason").hide();
     // $("#answers").hide();
   });
-  $("#quiz_city").submit(function(event) {
+    $("#quiz_city").submit(function(event) {
     event.preventDefault();
     $("#text").hide();
     $("#quiz_city").hide();
