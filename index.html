@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Track Suggester</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="start">
+      <h1>WHAT PROGRAMMING LANGUAGE SHOULD I LEARN?</h1>
+
+      <p>It seems like everyone is learning to code right now, but with all the different programming paths, which one should you take? Take this quiz now to find out!</p>
+      <button type="submit" class="btn">Start!</button>
+    </div>
+
+
+    <form id="quiz_city">
+      <h4>What city would you most like to live in?</h4>
+      <div class="radio">
+        <label><input type="radio" name="city" value="SF">San Francisco Bay Area</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="city" value="Washington">Washington D.C.</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="city" value="NY">New York City</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="city" value="Philadelphia">Philadelphia</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="city" value="NoCity">No set city - I want to work remotely</label>
+      </div>
+      <button type="submit" class="btn">Next</button>
+</form>
+
+<form id="quiz_company">
+      <h4>What size company would be ideal for you?</h4>
+      <div class="radio">
+        <label><input type="radio" name="company" value="Small">Small or early stage startup</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="company" value="Medium">Medium or mid-to-late stage startup</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="company" value="Large">Large, established company</label>
+      </div>
+      <button type="submit" class="btn">Next</button>
+    </form>
+
+<form id="quiz_team">
+      <h4>Which of the following technical teams would you MOST like to work on?</h4>
+      <div class="radio">
+        <label><input type="radio" name="team" value="Hulu">Hulu</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="team" value="PayPal">PayPal</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="team" value="Microsoft">Microsoft</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="team" value="Gmail">Gmail</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="team" value="Spotify">Spotify</label>
+      </div>
+      <button type="submit" class="btn">Next</button>
+    </form>
+
+<form id="quiz_project">
+      <h4>What kind of projects would you be most excited to build?</h4>
+      <div class="radio">
+        <label><input type="radio" name="project" value="Robots">Robots, obviously</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="project" value="Apps">Apps, apps and more apps</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="project" value="contentManagement">Content management systems</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="project" value="Web">Beautiful functional websites</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="project" value="Anithing">Anything, as long as I could build it fast and easily</label>
+      </div>
+      <button type="submit" class="btn">Next</button>
+    </form>
+
+<form id="quiz_level">
+      <h4>What is your current level of technical experience?</h4>
+      <div class="radio">
+        <label><input type="radio" name="level" value="Little">Very little. I ask kids to set up my smartphone</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="level" value="NotMuch">Not much, I mean I know how to set my alarm clock</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="level" value="Some">Some, I'm not an expert, but I've learned a bit over the years</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="level" value="Lots">Lots, although I'd like to expand my coding knowledge to other languages or paths</label>
+      </div>
+      <button type="submit" class="btn">Next</button>
+    </form>
+
+<form id="quiz_toy">
+      <h4>What’s your favorite childhood toy?</h4>
+      <div class="radio">
+        <label><input type="radio" name="toy" value="Doll">GI Joe/Barbie</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="toy" value="Play-Doh">Play-Doh</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="toy" value="Gameboy">Gameboy</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="toy" value="Tamagotchi">Tamagotchi</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="toy" value="Other">Whatever cool things was that my friends had at the time</label>
+      </div>
+      <button type="submit" class="btn">Next</button>
+    </form>
+
+<form id="quiz_reason">
+      <h4>In one word, what is the top reason you want to learn to code?</h4>
+      <div class="radio">
+        <label><input type="radio" name="reason" value="Fun">Fun!</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="reason" value="Opportunity">Opportunity!</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="reason" value="Challenge">Challenge!</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="reason" value="Money">Money!</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="reason" value="Growth">Growth!</label>
+      </div>
+      <button type="submit" class="btn">Next</button>
+    </form>
+
+<div id="answers">
+    <div id="C#">
+      <h4>C#!</h4>
+      <p>C# is the most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has
+        also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of
+        working for a larger company on business software, C# is a great choice.</p>
+    </div>
+    <div id="Java">
+      <h4>Java!</h4>
+      <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user
+        interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in
+        high-performance applications, Java could be a good language to learn.</p>
+    </div>
+    <div id="Ruby">
+      <h4>Ruby!</h4>
+      <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became
+        popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product
+        quickly.</p>
+    </div>
+    <div id="PHP">
+      <h4>PHP!</h4>
+      <p>PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the
+        language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of
+        government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</p>
+    </div>
+    <div id="CSS">
+      <h4>CSS!</h4>
+      <p>CSS is the language for describing the presentation of Web pages, including colors, layout, fonts, and other stylistic choices. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, and
+        printers. HTML — used for building the structure of the page — and CSS — used for the visual layout — are the two basic languages involved in the building of web pages and web applications.</p>
+    </div>
+    <div id="WebDesign">
+      <h4>Web design!</h4>
+      <p>Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your site
+        visitors. Web Design is a crucial component in web development, and students who learn design will be able to engineer positive and interactive user experiences through innovative interfaces.</p>
+    </div>
+  </div>
+
+
+  </div>
+</body>
+
+</html>
