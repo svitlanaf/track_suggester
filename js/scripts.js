@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  // var company = $("input[name=company]:checked").val();
+  // var project = $("input[name=project]:checked").val();
+var company = $("form#quiz_company");
+
   $("#quiz_city").hide();
   $("#quiz_company").hide();
   $("#quiz_team").hide();
@@ -18,12 +22,8 @@ $(document).ready(function() {
     $("#quiz_toy").hide();
     $("#quiz_reason").hide();
     $("#answers").hide();
-    $("#quiz_city").submit(function(event) {
-      var city = $("input[name=type]:checked").val();
-      $(".type").text(city);
-    });
   });
-  $("#next").click(function(event) {
+    $("#quiz_city").submit(function(event) {
     event.preventDefault();
     $("#text").hide();
     $("#quiz_city").hide();
@@ -34,12 +34,8 @@ $(document).ready(function() {
     $("#quiz_toy").hide();
     $("#quiz_reason").hide();
     $("#answers").hide();
-    $("#quiz_company").submit(function(event) {
-      var company = $("input[name=type]:checked").val();
-      $(".type").text(company);
-    });
   });
-  $("#next1").click(function(event) {
+    $("#quiz_company").submit(function(event) {
     event.preventDefault();
     $("#text").hide();
     $("#quiz_city").hide();
@@ -50,12 +46,8 @@ $(document).ready(function() {
     $("#quiz_toy").hide();
     $("#quiz_reason").hide();
     $("#answers").hide();
-    $("#quiz_team").submit(function(event) {
-      var team = $("input[name=type]:checked").val();
-      $(".type").text(team);
-    });
   });
-  $("#next2").click(function(event) {
+    $("#quiz_team").submit(function(event) {
     event.preventDefault();
     $("#text").hide();
     $("#quiz_city").hide();
@@ -66,12 +58,8 @@ $(document).ready(function() {
     $("#quiz_toy").hide();
     $("#quiz_reason").hide();
     $("#answers").hide();
-    $("#quiz_project").submit(function(event) {
-      var project = $("input[name=type]:checked").val();
-      $(".type").text(project);
-    });
   });
-  $("#next3").click(function(event) {
+    $("#quiz_project").submit(function(event) {
     event.preventDefault();
     $("#text").hide();
     $("#quiz_city").hide();
@@ -82,12 +70,8 @@ $(document).ready(function() {
     $("#quiz_toy").hide();
     $("#quiz_reason").hide();
     $("#answers").hide();
-    $("#quiz_level").submit(function(event) {
-      var level = $("input[name=type]:checked").val();
-      $(".type").text(level);
-    });
   });
-  $("#next4").click(function(event) {
+    $("#quiz_level").submit(function(event) {
     event.preventDefault();
     $("#text").hide();
     $("#quiz_city").hide();
@@ -98,12 +82,8 @@ $(document).ready(function() {
     $("#quiz_toy").show();
     $("#quiz_reason").hide();
     $("#answers").hide();
-    $("#quiz_toy").submit(function(event) {
-      var toy = $("input[name=type]:checked").val();
-      $(".type").text(toy);
-    });
   });
-  $("#next5").click(function(event) {
+    $("#quiz_toy").submit(function(event) {
     event.preventDefault();
     $("#text").hide();
     $("#quiz_city").hide();
@@ -114,33 +94,45 @@ $(document).ready(function() {
     $("#quiz_toy").hide();
     $("#quiz_reason").show();
     $("#answers").hide();
-    $("#quiz_reason").submit(function(event) {
-      var reason = $("input[name=type]:checked").val();
-      $(".type").text(reason);
-    });
   });
-  $("#next6").click(function(event) {
+    $("#quiz_reason").submit(function(event) {
     event.preventDefault();
-    if (company === "Large") {
-      $('#C#').show();
+    $("#text").hide();
+    $("#quiz_city").hide();
+    $("#quiz_company").hide();
+    $("#quiz_team").hide();
+    $("#quiz_project").hide();
+    $("#quiz_level").hide();
+    $("#quiz_toy").hide();
+    $("#quiz_reason").hide();
+    $("#answers").hide();
+  });
+
+    if($('company input[name="company"]:checked').val() === "Large")
+
+    {
+      $('#C_Sharp').show();
       $('#Java').hide();
       $('#Ruby').hide();
       $('#PHP').hide();
       $('#CSS').hide();
       $('#WebDesign').hide();
-    // } else if ( )  {
-    //   $('#C#').hide();
-    //   $('#Java').hide();
-    //   $('#Ruby').hide();
-    //   $('#PHP').hide();
-    //   $('#CSS').hide();
-    //   $('#WebDesign').hide();
-    // } else {
-    //   $('#C#').hide();
-    //   $('#Java').hide();
-    //   $('#Ruby').hide();
-    //   $('#PHP').hide();
-    //   $('#CSS').hide();
-    //   $('#WebDesign').hide();
     }
+
+    // var form = $("form#submit_info");
+    // form.submit(function(event) {
+    //   event.preventDefault();
+    //   $("#submit_info").hide();
+    //   $("#submission").show();
+    //   var firstnameInput = $("input#firstname").val();
+    //   $(".firstname").text(firstnameInput);
+    //   var lastnameInput = $("input#lastname").val();
+    //   $(".lastname").text(lastnameInput);
+    //   var addressInput = $("input#address").val();
+    //   $(".address").text(addressInput);
+    //   var sizeInput = $("#size").val();
+    //   $(".size").text(sizeInput);
+    //   var typeInput = $("input[name=type]:checked").val();
+    //   $(".type").text(typeInput);
+
 });

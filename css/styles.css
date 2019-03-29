@@ -1,0 +1,111 @@
+body {
+  margin: 10px;
+  background-color: #fff5ef;
+}
+
+h1 {
+  font-family: "Times New Roman";
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1.header {
+  color: #722f1a
+}
+
+h4 {
+  font-family: "Times New Roman";
+  font-size: 30px;
+  font-weight: bold;
+  margin: auto;
+}
+
+p {
+  font-family: "Times New Roman";
+  font-size: 30px;
+  font-weight: normal;
+  font-weight: normal;
+  text-align: center;
+}
+
+label {
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+
+p.header {
+  font-family: "Times New Roman";
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
+}
+
+button#next {
+  box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
+  background: linear-gradient(rgb(240, 223, 240) 5%, rgb(240, 139, 156) 100%) rgb(240, 223, 240);
+  border-radius: 6px;
+  border: 1px solid rgb(237, 190, 207);
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(46, 18, 3);
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  position: relative;
+  transform: translateX(-50%);
+  left: 6.5%;
+  height: 40px;
+  width: 150px;
+}
+
+button#start {
+  box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
+  background: linear-gradient(rgb(240, 223, 240) 5%, rgb(240, 139, 156) 100%) rgb(240, 223, 240);
+  border-radius: 6px;
+  border: 1px solid rgb(237, 190, 207);
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(46, 18, 3);
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 40px;
+  width: 150px;
+}
+
+.text {
+  display: block;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffe5f0;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
