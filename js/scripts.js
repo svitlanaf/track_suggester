@@ -1,7 +1,4 @@
 $(document).ready(function() {
-  // var company = $("input[name=company]:checked").val();
-  // var project = $("input[name=project]:checked").val();
-var company = $("form#quiz_company");
 
   $("#quiz_city").hide();
   $("#quiz_company").hide();
@@ -10,7 +7,12 @@ var company = $("form#quiz_company");
   $("#quiz_level").hide();
   $("#quiz_toy").hide();
   $("#quiz_reason").hide();
-  $("#answers").hide();
+  $("#C_Sharp").hide();
+  $("#Java").hide();
+  $("#Ruby").hide();
+  $("#PHP").hide();
+  $("#CSS").hide();
+  $("#WebDesign").hide();
   $("#start").click(function(event) {
     event.preventDefault();
     $("#text").hide();
@@ -21,9 +23,9 @@ var company = $("form#quiz_company");
     $("#quiz_level").hide();
     $("#quiz_toy").hide();
     $("#quiz_reason").hide();
-    $("#answers").hide();
+    // $("#answers").hide();
   });
-    $("#quiz_city").submit(function(event) {
+  $("#quiz_city").submit(function(event) {
     event.preventDefault();
     $("#text").hide();
     $("#quiz_city").hide();
@@ -33,9 +35,9 @@ var company = $("form#quiz_company");
     $("#quiz_level").hide();
     $("#quiz_toy").hide();
     $("#quiz_reason").hide();
-    $("#answers").hide();
+    // $("#answers").hide();
   });
-    $("#quiz_company").submit(function(event) {
+  $("#quiz_company").submit(function(event) {
     event.preventDefault();
     $("#text").hide();
     $("#quiz_city").hide();
@@ -45,9 +47,9 @@ var company = $("form#quiz_company");
     $("#quiz_level").hide();
     $("#quiz_toy").hide();
     $("#quiz_reason").hide();
-    $("#answers").hide();
+    // $("#answers").hide();
   });
-    $("#quiz_team").submit(function(event) {
+  $("#quiz_team").submit(function(event) {
     event.preventDefault();
     $("#text").hide();
     $("#quiz_city").hide();
@@ -57,9 +59,9 @@ var company = $("form#quiz_company");
     $("#quiz_level").hide();
     $("#quiz_toy").hide();
     $("#quiz_reason").hide();
-    $("#answers").hide();
+    // $("#answers").hide();
   });
-    $("#quiz_project").submit(function(event) {
+  $("#quiz_project").submit(function(event) {
     event.preventDefault();
     $("#text").hide();
     $("#quiz_city").hide();
@@ -69,9 +71,9 @@ var company = $("form#quiz_company");
     $("#quiz_level").show();
     $("#quiz_toy").hide();
     $("#quiz_reason").hide();
-    $("#answers").hide();
+    // $("#answers").hide();
   });
-    $("#quiz_level").submit(function(event) {
+  $("#quiz_level").submit(function(event) {
     event.preventDefault();
     $("#text").hide();
     $("#quiz_city").hide();
@@ -81,9 +83,9 @@ var company = $("form#quiz_company");
     $("#quiz_level").hide();
     $("#quiz_toy").show();
     $("#quiz_reason").hide();
-    $("#answers").hide();
+    // $("#answers").hide();
   });
-    $("#quiz_toy").submit(function(event) {
+  $("#quiz_toy").submit(function(event) {
     event.preventDefault();
     $("#text").hide();
     $("#quiz_city").hide();
@@ -93,9 +95,9 @@ var company = $("form#quiz_company");
     $("#quiz_level").hide();
     $("#quiz_toy").hide();
     $("#quiz_reason").show();
-    $("#answers").hide();
+    // $("#answers").hide();
   });
-    $("#quiz_reason").submit(function(event) {
+  $("#quiz_reason").submit(function(event) {
     event.preventDefault();
     $("#text").hide();
     $("#quiz_city").hide();
@@ -105,34 +107,21 @@ var company = $("form#quiz_company");
     $("#quiz_level").hide();
     $("#quiz_toy").hide();
     $("#quiz_reason").hide();
-    $("#answers").hide();
-  });
+    // $("#answers").hide();
 
-    if($('company input[name="company"]:checked').val() === "Large")
-
-    {
-      $('#C_Sharp').show();
-      $('#Java').hide();
-      $('#Ruby').hide();
-      $('#PHP').hide();
-      $('#CSS').hide();
-      $('#WebDesign').hide();
+    if ($('input[name="company"]:checked').val() === "Large") {
+        $('#C_Sharp').show();
+    } else if ($('input[name="project"]:checked').val() === "Apps") {
+        $('#Java').show();
+    } else if ($('input[name="company"]:checked').val() === "Small") {
+        $('#Ruby').show();
+    } else if ($('input[name="project"]:checked').val() === "contentManagement") {
+        $('#PHP').show();
+    } else if ($('input[name="project"]:checked').val() === "Anything") {
+        $('#CSS').show();
     }
-
-    // var form = $("form#submit_info");
-    // form.submit(function(event) {
-    //   event.preventDefault();
-    //   $("#submit_info").hide();
-    //   $("#submission").show();
-    //   var firstnameInput = $("input#firstname").val();
-    //   $(".firstname").text(firstnameInput);
-    //   var lastnameInput = $("input#lastname").val();
-    //   $(".lastname").text(lastnameInput);
-    //   var addressInput = $("input#address").val();
-    //   $(".address").text(addressInput);
-    //   var sizeInput = $("#size").val();
-    //   $(".size").text(sizeInput);
-    //   var typeInput = $("input[name=type]:checked").val();
-    //   $(".type").text(typeInput);
-
+    else {
+        $('#WebDesign').show();
+    }
+});
 });
