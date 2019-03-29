@@ -119,6 +119,8 @@ $(document).ready(function() {
       $(".type").text(reason);
     });
   });
+  $("#next6").click(function(event) {
+    event.preventDefault();
     if (company === "Large") {
       $('#C#').show();
       $('#Java').hide();
