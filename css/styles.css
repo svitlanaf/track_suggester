@@ -63,9 +63,10 @@ button#next {
   left: 6.5%;
   height: 40px;
   width: 150px;
+
 }
 
-button#start {
+button#start, #start_again {
   box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
   background: linear-gradient(rgb(240, 223, 240) 5%, rgb(240, 139, 156) 100%) rgb(240, 223, 240);
   border-radius: 6px;
