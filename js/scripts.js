@@ -14,10 +14,20 @@ $(document).ready(function() {
   $("#WebDesign").hide();
   $("#retry").hide();
 
-  $("#start").click(function(event) {
+
+
+  $("#submit_info").submit(function(event) {
     event.preventDefault();
+    var firstnameInput = $("input#firstname").val();
+    $(".firstname").text(firstnameInput);
+    if ($('input').val() === "") {
+      alert('Please enter your name');
+      return;
+      } else {
+    $("submit_info").hide();
     $("#text").hide();
     $("#quiz_city").show();
+  };
   });
   $("#quiz_city").submit(function(event) {
     event.preventDefault();

@@ -97,7 +97,8 @@ img#first {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: auto;
+  height: 300px;
 }
 
 img#city,#company,#team,#project,#level,#toy,#reason {
@@ -119,4 +120,13 @@ input[type='radio']:checked:after {
   display: inline-block;
   visibility: visible;
   border: 2px solid white;
+}
+
+.form-control {
+  display: inline-block;
+  width: 300px;
+}
+
+.form-group {
+  margin-left: 373px;
 }
