@@ -16,7 +16,7 @@ _Track Suggester webpage that asks future students of Epicodus a series of quest
 
 ## Known Bugs
 
-_If an answer for the quiz question was not selected the quiz continues._
+_When user press "Retry" button the webpage shows question with previously checked radio buttons._
 
 ## Support and contact details
 
