@@ -16,7 +16,8 @@ _Track Suggester webpage that asks future students of Epicodus a series of quest
 
 ## Known Bugs
 
-_When user press "Retry" button the webpage shows question with previously checked radio buttons._
+_Fixed bugs related to "Retry" button._
+_No new bugs found during testing._
 
 ## Support and contact details
 
