@@ -87,17 +87,17 @@ $(document).ready(function() {
       } else {
     $("#quiz_reason").hide();
     if ($('input[name="company"]:checked').val() === "Large") {
-      $('#C_Sharp').show();
+      $('#C_Sharp').fadeIn();
     } else if ($('input[name="project"]:checked').val() === "Apps") {
-      $('#Java').show();
+      $('#Java').fadeIn();
     } else if ($('input[name="company"]:checked').val() === "Small") {
-      $('#Ruby').show();
+      $('#Ruby').fadeIn();
     } else if ($('input[name="project"]:checked').val() === "contentManagement") {
-      $('#PHP').show();
+      $('#PHP').fadeIn();
     } else if ($('input[name="project"]:checked').val() === "Anything") {
-      $('#CSS').show();
+      $('#CSS').fadeIn();
     } else {
-      $('#WebDesign').show();
+      $('#WebDesign').fadeIn();
     }
     $("#retry").show();
   };
