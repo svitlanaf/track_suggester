@@ -11,7 +11,8 @@ h1 {
 }
 
 h1.header {
-  color: #722f1a
+  color: #722f1a;
+  margin-bottom: 30px;
 }
 
 h4 {
@@ -19,7 +20,8 @@ h4 {
   font-size: 26px;
   font-weight: bold;
   margin-top: 12px;
-  text-align: center;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
 p {
@@ -44,7 +46,7 @@ p.header {
   text-align: center;
 }
 
-button#next {
+.btn {
   box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
   background: linear-gradient(rgb(240, 223, 240) 5%, rgb(240, 139, 156) 100%) rgb(240, 223, 240);
   border-radius: 6px;
@@ -63,10 +65,10 @@ button#next {
   left: 6.5%;
   height: 40px;
   width: 150px;
-
+  margin-top: 15px;
 }
 
-button#start, #start_again {
+button#start, #retry {
   box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
   background: linear-gradient(rgb(240, 223, 240) 5%, rgb(240, 139, 156) 100%) rgb(240, 223, 240);
   border-radius: 6px;
@@ -91,11 +93,18 @@ button#start, #start_again {
   display: block;
 }
 
-img {
+img#first {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+img#city,#company,#team,#project,#level,#toy,#reason {
+float: right; margin: 0px 0px 15px 15px;
+margin-right: 20px;
+width: 450px;
+height: 350px;
 }
 
 input[type='radio']:checked:after {
@@ -105,7 +114,7 @@ input[type='radio']:checked:after {
   top: -2px;
   left: -1px;
   position: relative;
-  background-color: #ffe5f0;
+  background-color: #d65970;
   content: '';
   display: inline-block;
   visibility: visible;

@@ -13,13 +13,14 @@
   <div class="container">
     <h1 class="header">WHAT PROGRAMMING LANGUAGE SHOULD I LEARN?</h1>
     <div id="text">
-      <img src="img/text_image.jpg" alt="An image of keabord." height="75%" width="75%">
-      <p class="header"> It seems like everyone is learning to code right now, but with all the different programming paths, which one should you take? Take this quiz now to find out!</p>
+      <img id="first" src="img/text_image.jpg" alt="An image of keabord." height="75%" width="75%">
+      <p class="header"> It seems like everyone is learning to code right now, but with all the different programming paths, <br> which one should you take? Take this quiz now to find out!</p>
       <button id="start" class="btn">Start!</button>
     </div>
 
 
     <form id="quiz_city">
+      <img id="city" src="img/city.jpg" alt="An image of a city.">
       <h4>What city would you most like to live in?</h4>
       <div class="radio">
         <label><input type="radio" name="city" value="SF">San Francisco Bay Area</label>
@@ -36,10 +37,11 @@
       <div class="radio">
         <label><input type="radio" name="city" value="NoCity">No set city - I want to work remotely</label>
       </div>
-      <button id="next" type="submit" class="btn">Next</button>
+      <button type="submit" class="btn">Next</button>
     </form>
 
     <form id="quiz_company">
+      <img id="company" src="img/company.jpg" alt="An image of a company.">
       <h4>What size company would be ideal for you?</h4>
       <div class="radio">
         <label><input type="radio" name="company" value="Small">Small or early stage startup</label>
@@ -50,10 +52,11 @@
       <div class="radio">
         <label><input type="radio" name="company" value="Large">Large, established company</label>
       </div>
-      <button id="next" type="submit" class="btn">Next</button>
+      <button type="submit" class="btn">Next</button>
     </form>
 
     <form id="quiz_team">
+      <img id="team" src="img/team.jpeg" alt="An image of a Google company.">
       <h4>Which of the following technical teams would you MOST like to work on?</h4>
       <div class="radio">
         <label><input type="radio" name="team" value="Hulu">Hulu</label>
@@ -70,10 +73,11 @@
       <div class="radio">
         <label><input type="radio" name="team" value="Spotify">Spotify</label>
       </div>
-      <button id="next" type="submit" class="btn">Next</button>
+      <button type="submit" class="btn">Next</button>
     </form>
 
     <form id="quiz_project">
+      <img id="project" src="img/project.jpg" alt="An image of a smartphone screen.">
       <h4>What kind of projects would you be most excited to build?</h4>
       <div class="radio">
         <label><input type="radio" name="project" value="Robots">Robots, obviously</label>
@@ -90,10 +94,11 @@
       <div class="radio">
         <label><input type="radio" name="project" value="Anything">Anything, as long as I could build it fast and easily</label>
       </div>
-      <button id="next" type="submit" class="btn">Next</button>
+      <button type="submit" class="btn">Next</button>
     </form>
 
     <form id="quiz_level">
+      <img id="level" src="img/level.jpg" alt="An image of a baby.">
       <h4>What is your current level of technical experience?</h4>
       <div class="radio">
         <label><input type="radio" name="level" value="Little">Very little. I ask kids to set up my smartphone</label>
@@ -105,12 +110,13 @@
         <label><input type="radio" name="level" value="Some">Some, I'm not an expert, but I've learned a bit over the years</label>
       </div>
       <div class="radio">
-        <label><input type="radio" name="level" value="Lots">Lots, although I'd like to expand my coding knowledge to other languages or paths</label>
+        <label><input type="radio" name="level" value="Lots">Lots, although I'd like to expand my coding knowledge to other languages</label>
       </div>
-      <button id="next" type="submit" class="btn">Next</button>
+      <button type="submit" class="btn">Next</button>
     </form>
 
     <form id="quiz_toy">
+      <img id="toy" src="img/toy.jpg" alt="An image of toys.">
       <h4>What’s your favorite childhood toy?</h4>
       <div class="radio">
         <label><input type="radio" name="toy" value="Doll">GI Joe/Barbie</label>
@@ -127,10 +133,11 @@
       <div class="radio">
         <label><input type="radio" name="toy" value="Other">Whatever cool things was that my friends had at the time</label>
       </div>
-      <button id="next" type="submit" class="btn">Next</button>
+      <button type="submit" class="btn">Next</button>
     </form>
 
     <form id="quiz_reason">
+      <img id="reason" src="img/reason.jpeg">
       <h4>In one word, what is the top reason you want to learn to code?</h4>
       <div class="radio">
         <label><input type="radio" name="reason" value="Fun">Fun!</label>
@@ -147,7 +154,7 @@
       <div class="radio">
         <label><input type="radio" name="reason" value="Growth">Growth!</label>
       </div>
-      <button id="next" type="submit" class="btn">Next</button>
+      <button type="submit" class="btn">Next</button>
     </form>
 
     <div id="answers">
@@ -176,7 +183,7 @@
         <h4>Web design is your best choise!</h4>
         <p>Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your site visitors. Web Design is a crucial component in web development, and students who learn design will be able to engineer positive and interactive user experiences through innovative interfaces.</p>
       </div>
-      <button id="start_again" class="btn">Start again!</button>
+      <button id="retry" type="submit" class="btn">Retry</button>
     </div>
 </div>
 </body>
