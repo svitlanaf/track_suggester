@@ -16,8 +16,9 @@ _Track Suggester webpage that asks future students of Epicodus a series of quest
 
 ## Known Bugs
 
-_Fixed bugs related to "Retry" button._
-_No new bugs found during testing._
+* _Fixed bugs related to "Retry" button._
+* _Fixed bug: numbers, symbols restriction in "YOur name" form._
+* _No new bugs found during testing._
 
 ## Support and contact details
 
@@ -25,10 +26,10 @@ _If you find any issue regarding this webpage please contact Svitlana Filatova v
 
 ## Technologies Used
 
-_HTML_
-_CSS_
-_JavaScript_
-_JQuery_
+* _HTML_
+* _CSS_
+* _JavaScript_
+* _JQuery_
 
 ### License
 

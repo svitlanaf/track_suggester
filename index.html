@@ -19,7 +19,7 @@
       <form id="submit_info">
         <div class="form-group">
           <label for="firstname">Your name:</label>
-          <input id="firstname" class="form-control" type="text">
+          <input id="firstname" class="form-control" type="text" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
         </div>
       <button id="start" type="submit" class="btn">Start!</button>
     </form>
